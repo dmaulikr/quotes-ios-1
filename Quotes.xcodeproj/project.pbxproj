@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB590E211F26723500638329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB590E201F26723500638329 /* Assets.xcassets */; };
+		DB590E251F2687FA00638329 /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB590E241F2687FA00638329 /* QuotesManager.swift */; };
 		DBA8294B1F266C25008E2B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8294A1F266C25008E2B1E /* AppDelegate.swift */; };
 		DBA8294D1F266C25008E2B1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8294C1F266C25008E2B1E /* ViewController.swift */; };
 		DBA829501F266C25008E2B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA8294E1F266C25008E2B1E /* Main.storyboard */; };
-		DBA829521F266C25008E2B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA829511F266C25008E2B1E /* Assets.xcassets */; };
 		DBA829551F266C25008E2B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA829531F266C25008E2B1E /* LaunchScreen.storyboard */; };
 		DBA829601F266C25008E2B1E /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8295F1F266C25008E2B1E /* QuotesTests.swift */; };
 		DBA8296B1F266C25008E2B1E /* QuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8296A1F266C25008E2B1E /* QuotesUITests.swift */; };
+		DBA829791F266D3F008E2B1E /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA829781F266D3F008E2B1E /* Author.swift */; };
+		DBA8297B1F266E15008E2B1E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8297A1F266E15008E2B1E /* Quote.swift */; };
+		DBA8297D1F266FE4008E2B1E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8297C1F266FE4008E2B1E /* QuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB590E201F26723500638329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB590E241F2687FA00638329 /* QuotesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = SOURCE_ROOT; };
 		DBA829471F266C25008E2B1E /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA8294A1F266C25008E2B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA8294C1F266C25008E2B1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBA8294F1F266C25008E2B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBA829511F266C25008E2B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA829541F266C25008E2B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA829561F266C25008E2B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA8295B1F266C25008E2B1E /* QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +52,9 @@
 		DBA829661F266C25008E2B1E /* QuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA8296A1F266C25008E2B1E /* QuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesUITests.swift; sourceTree = "<group>"; };
 		DBA8296C1F266C25008E2B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA829781F266D3F008E2B1E /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		DBA8297A1F266E15008E2B1E /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		DBA8297C1F266FE4008E2B1E /* QuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		DBA829491F266C25008E2B1E /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				DB590E241F2687FA00638329 /* QuotesManager.swift */,
+				DB590E201F26723500638329 /* Assets.xcassets */,
 				DBA8294A1F266C25008E2B1E /* AppDelegate.swift */,
 				DBA8294C1F266C25008E2B1E /* ViewController.swift */,
 				DBA8294E1F266C25008E2B1E /* Main.storyboard */,
-				DBA829511F266C25008E2B1E /* Assets.xcassets */,
 				DBA829531F266C25008E2B1E /* LaunchScreen.storyboard */,
 				DBA829561F266C25008E2B1E /* Info.plist */,
+				DBA829781F266D3F008E2B1E /* Author.swift */,
+				DBA8297A1F266E15008E2B1E /* Quote.swift */,
+				DBA8297C1F266FE4008E2B1E /* QuoteViewController.swift */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -233,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA829551F266C25008E2B1E /* LaunchScreen.storyboard in Resources */,
-				DBA829521F266C25008E2B1E /* Assets.xcassets in Resources */,
+				DB590E211F26723500638329 /* Assets.xcassets in Resources */,
 				DBA829501F266C25008E2B1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA8297B1F266E15008E2B1E /* Quote.swift in Sources */,
+				DBA829791F266D3F008E2B1E /* Author.swift in Sources */,
 				DBA8294D1F266C25008E2B1E /* ViewController.swift in Sources */,
 				DBA8294B1F266C25008E2B1E /* AppDelegate.swift in Sources */,
+				DB590E251F2687FA00638329 /* QuotesManager.swift in Sources */,
+				DBA8297D1F266FE4008E2B1E /* QuoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 				DBA829711F266C25008E2B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA829721F266C25008E2B1E /* Build configuration list for PBXNativeTarget "QuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				DBA829741F266C25008E2B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA829751F266C25008E2B1E /* Build configuration list for PBXNativeTarget "QuotesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				DBA829771F266C25008E2B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

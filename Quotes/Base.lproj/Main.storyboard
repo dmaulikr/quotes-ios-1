@@ -1,26 +1,94 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quote View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuoteViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs_background" translatesAutoresizingMaskIntoConstraints="NO" id="31f-lP-HI7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcU-jz-v6U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.68324593321917804" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWA-96-4d7">
+                                <rect key="frame" x="40" y="56" width="259" height="369"/>
+                                <string key="text">"If you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long. Just figure out what’s next."</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pU-nj-OIW">
+                                <rect key="frame" x="176" y="438" width="163" height="42.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVc-hH-pWD">
+                                <rect key="frame" x="92" y="583" width="190" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57503361547108156" blue="0.17414600968611349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="INSPIRE ME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="inpireMeButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLJ-dS-8Gc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="31f-lP-HI7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1WL-7C-gij"/>
+                            <constraint firstItem="WcU-jz-v6U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="53v-vo-EIE"/>
+                            <constraint firstItem="uWA-96-4d7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="JDr-F8-HDy"/>
+                            <constraint firstItem="uWA-96-4d7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="Nmc-l6-055"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WcU-jz-v6U" secondAttribute="bottom" id="Qt7-s3-NiR"/>
+                            <constraint firstItem="9pU-nj-OIW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-20" id="VVu-jP-Ec0"/>
+                            <constraint firstItem="WcU-jz-v6U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aRo-Je-ghV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="31f-lP-HI7" secondAttribute="bottom" id="bDc-QP-A37"/>
+                            <constraint firstAttribute="trailing" secondItem="31f-lP-HI7" secondAttribute="trailing" id="bb7-zZ-Vlv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uWA-96-4d7" secondAttribute="trailing" constant="60" id="e7d-Vd-gDu"/>
+                            <constraint firstAttribute="trailing" secondItem="WcU-jz-v6U" secondAttribute="trailing" id="ewX-Wv-Ri2"/>
+                            <constraint firstItem="9pU-nj-OIW" firstAttribute="top" secondItem="uWA-96-4d7" secondAttribute="bottom" constant="13" id="i11-oy-8Ix"/>
+                            <constraint firstItem="31f-lP-HI7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lCU-3T-w4W"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorNameLabel" destination="9pU-nj-OIW" id="O1q-w1-kcb"/>
+                        <outlet property="backgroundAuthorImage" destination="31f-lP-HI7" id="yWo-eQ-CZ4"/>
+                        <outlet property="inspireMeButton" destination="mVc-hH-pWD" id="EOJ-9B-Qcf"/>
+                        <outlet property="quoteTextLabel" destination="uWA-96-4d7" id="OVa-PR-dim"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="steve_jobs_background" width="2048" height="2048"/>
+    </resources>
 </document>
